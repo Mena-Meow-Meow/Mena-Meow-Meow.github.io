@@ -1,0 +1,170 @@
+/* === Type ===
+
+cdcdcd - gray
+ff0000 - red
+
+nav = helvetica bold 18pt gray
+h1 = teko 72pt black
+h2 = helvetica bold 24pt black
+p = helvetica 14pt black
+aside = helvetica 24pt black
+footer = helvetica oblique 10pt gray
+*/
+
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14pt;
+    line-height: 30pt;
+    color: #000000;
+}
+
+nav a{
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #cdcdcd;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Teko";
+    font-size: 90pt;
+}
+
+h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: "bold";
+    font-size: 24pt;  
+}
+
+footer {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-style: oblique;
+    font-size: 10pt;
+    color: #cdcdcd;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* === Backgrounds === */
+
+header {
+background-color: #000000;
+}
+
+main {
+background-color: #cdcdcd;
+}
+
+#splash {
+    background-image: url(heading.jpg);
+    background-size: cover;
+}
+
+body {
+background-color: #ffffff;
+}
+
+footer {
+background-color: #000000;
+}
+
+
+/* ===Box Model ===*/
+
+#splash {
+    height: 600px;
+}
+
+nav {
+    padding-top: 40px;
+}
+
+footer {
+    padding: 135px;
+}
+
+#foodarticles {
+    padding-left: 45px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-right: 45px;
+}
+
+article {
+    margin-bottom: 100px;
+}
+
+nav a{
+    margin-right: 20px;
+}
+
+
+/* === Layout === */
+
+.floatleft {
+float: left;
+    margin-right: 45px;
+    margin-bottom: 45px;
+    margin-bottom: 970px
+}
+
+#container {
+    margin: auto;
+    width: 2000px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+aside {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+    line-height: 40pt;
+    
+}
+
+#splash {
+    grid-column-start: 1;
+    grid-column-end: 3;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+body {
+    padding-top: 325px;
+}
